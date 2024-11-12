@@ -12,7 +12,7 @@ public class Auto {
     int cantidadAsientos() {
         int contador = 0;
         for (Asiento i: this.asientos) {
-            if (i instanceof Asiento) {
+            if (i != null) {
                 ++contador;
             }
         }
