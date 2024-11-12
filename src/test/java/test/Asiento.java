@@ -9,8 +9,8 @@ public class Asiento {
 
     public void cambiarColor (string color) {
         boolean colorEncontrado = false;
-        for (String valido : colores) {
-            if (valido.equals(color)) {
+        for (String validoColor : colores) {
+            if (validoColor.equals(color)) {
                 colorEncontrado = true;
                 break;
             }
