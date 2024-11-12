@@ -1,7 +1,7 @@
 package test;
 
 public class Asiento {
-    string colores = {"rojo", "verde", "amarillo", "negro", "blanco"};
+    static string[] colores = {"rojo", "verde", "amarillo", "negro", "blanco"};
 
     string color;
     int precio;
