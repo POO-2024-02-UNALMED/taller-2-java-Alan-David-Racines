@@ -18,3 +18,18 @@ public class Auto {
         }
         return contador;
     }
+    String verificarIntegridad(){
+        if (this.motor.registro == this.registro) {
+            for (Asiento i: this.Asientos) {
+                if (i.registro != this.registro) {
+                    return "Las piezas no son originales";
+
+                }
+            }
+            return "Auto original";
+        }
+        return "Las piezas no son originales";
+
+    }
+
+}
