@@ -11,9 +11,9 @@ public class Auto {
 
     int cantidadAsientos() {
         int contador = 0;
-        for (Asiento i: this.asientos) {
-            if (i != null) {
-                ++contador;
+        for (Asiento asiento: this.asientos) {
+            if (asiento != null) {
+                contador++;
             }
         }
         return contador;

@@ -8,12 +8,17 @@ public class Asiento {
     int registro;
 
     public void cambiarColor (string color) {
+        boolean colorEncontrado = false;
         for (String valido : colores) {
             if (valido.equals(color)) {
-                this.color = color;
+                colorEncontrado = true;
                 break;
             }
 
+        }
+
+        if (colorEncontrado){
+            this.color = color;
         }
         
 
